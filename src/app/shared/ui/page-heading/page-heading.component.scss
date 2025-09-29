@@ -1,0 +1,41 @@
+@use '../../../../../public/styles/abstracts/vars' as * ;
+@use '../../../../../public/styles/abstracts/mixins' as * ;
+.page_heading{
+    @include flex_box(flex,null,center,16px);
+    // margin-bottom: 20px;
+    .section_title{
+        color: $main_color;
+        font-size: 18px;
+        font-weight: 700;
+
+    }
+
+    .page_title{
+        font-size: 16px;
+        font-weight: 400;
+        color: #619363;
+    }
+
+
+
+
+    // padding: 10px 20px;
+    // border-bottom: 1px solid $secondary_color;
+}
+
+
+    .btns_header{
+        a{
+        min-width: 182px;
+        background-color: $btn_color;
+        height: 44px;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 44px;
+        font-size: 14px;
+        font-weight: 700px;
+        color:$white-color;
+        }
+        
+        
+    }
