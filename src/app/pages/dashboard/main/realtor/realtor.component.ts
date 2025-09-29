@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Realtor } from './models/realtor';
+import { nationality } from '../tenant/models/tenant';
+import { SharedService } from '../../../../shared/services/shared.service';
 
 @Component({
   selector: 'app-realtor',
@@ -25,7 +27,17 @@ export class RealtorComponent {
 ];
 
 
-// pagination
+ngOnInit(){
+  this.getAllNationality();
+}
+
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Services !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+shared_service:SharedService=inject(SharedService)
+
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! pagination!!!!!!!!!!!!!!!!!!!!!!!!
 
 pageIndex=1
 pageSize=10
@@ -36,4 +48,21 @@ onPageChanged(page: number) {
   // this.fetchEmployees(); // أعد جلب البيانات
   // this.getData()
 }
+//
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 GetAll Nationality!!!!!!!!!!!!!!!!!!!!!!!!1
+
+dataNationality:nationality[]=[]
+
+
+
+getAllNationality(){
+  this.shared_service.getAllNationality().subscribe((res:any)=>{
+    this.dataNationality=res.nationalities.map((item:any)=>({
+      code:item.code,
+      nationality_ar:item.nationality_ar
+    }))
+  })
+}
+
+
 }

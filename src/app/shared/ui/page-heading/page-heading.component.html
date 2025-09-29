@@ -8,6 +8,15 @@
 </div>
 
 <p class="page_title">{{subtitle}}</p>
+
+<div *ngIf="showdescription" class="showDescription">
+    <div class="img"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.0925 5.08329L10.215 10.5L14.0917 15.9166L13.0759 15.9166L9.19753 10.5L13.0759 5.08329L14.0925 5.08329ZM9.26253 5.08329L5.3842 10.5L9.26336 15.9166L8.2467 15.9166L4.36836 10.5L8.2467 5.08329L9.26253 5.08329Z" fill="#7F7F7F"/>
+</svg>
+</div>
+
+<p class="page_title">{{description}}</p>
+</div>
 </div>
 
 
@@ -16,7 +25,7 @@
 <div *ngIf="explorerBtn"> 
 <div class="btn_addData">
     
-    <a href="#">
+    <a [routerLink]="AddRoute">
 
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11.46 13.7299C13.0119 13.7299 14.27 12.4718 14.27 10.9199C14.27 9.36794 13.0119 8.10986 11.46 8.10986C9.90809 8.10986 8.65001 9.36794 8.65001 10.9199C8.65001 12.4718 9.90809 13.7299 11.46 13.7299Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -28,7 +37,7 @@
 </svg>
 
 
-اضافه مستاجر جديد
+{{TitlePageExplorerBtn}}
 
 </a>
 </div>
@@ -37,8 +46,8 @@
 
 
 <div *ngIf="AddBtn">
-<a href='#' class="btn_explorer">
-    مستكشف  المستاجرين
+<a [routerLink]="ExplorerRoute" class="btn_explorer">
+  {{TitlePageAddBtn}}
 </a>
 </div>
 

@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AddapartmentComponent {
 
+  title='الرئيسيه'
+  subtitle='الوحده'
+
+
+
+  refreshPage(){
+    location.reload();
+  }
+
 }

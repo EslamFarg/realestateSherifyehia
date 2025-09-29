@@ -75,6 +75,12 @@
     
     @include flex_box(flex,center,center,5px);
 
+         @include responsive('small') {
+            margin-top: 10px;
+        }
+         @include responsive('meduim') {
+            margin-top: 10px;
+        }
     p{
         color: $black-color;
         font-size: 14px;

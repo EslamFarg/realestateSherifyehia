@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { BrowserModule } from "@angular/platform-browser";
 
 @Component({
@@ -13,7 +13,25 @@ export class SearchDataComponent {
 
   showFilterData=false;
 
+  @Input() dataFilter:any
+  selectIndex:any=0
+
   showFilter(){
     this.showFilterData=!this.showFilterData
+  }
+
+
+  @HostListener('document:click',['$event'])
+
+
+  Clickout(e:any){
+
+
+    if(!e.target.closest('.input_search')){
+      this.showFilterData=false;
+    }
+
+    // console.log(e);
+    // if(e.)
   }
 }

@@ -13,9 +13,11 @@
 
 
                     <ul class="data_search" [ngClass]="{'active':showFilterData}">
-                        <li><a href="#">اسم المستأجر</a></li>
-                        <li><a href="#">رقم الهويه</a></li>
-                        <li><a href="#">رقم الجوال</a></li>
+
+                        @for (item of dataFilter; track $index) {
+                            <li><a  (click)="selectIndex = $index" [ngClass]="{'active': selectIndex == $index }">{{item}}</a></li>
+                        }
+                  
 
                     </ul>
 

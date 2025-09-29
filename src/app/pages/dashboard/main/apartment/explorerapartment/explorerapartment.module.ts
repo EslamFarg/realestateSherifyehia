@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { ExplorerapartmentRoutingModule } from './explorerapartment-routing.module';
 import { ExplorerapartmentComponent } from './explorerapartment.component';
+import { PageHeadingComponent } from '../../../../../shared/ui/page-heading/page-heading.component';
+import { SearchDataComponent } from '../../../../../shared/ui/search-data/search-data.component';
+import { PaginationComponent } from '../../../../../shared/ui/pagination/pagination.component';
+
 
 
 @NgModule({
@@ -11,7 +15,10 @@ import { ExplorerapartmentComponent } from './explorerapartment.component';
   ],
   imports: [
     CommonModule,
-    ExplorerapartmentRoutingModule
+    ExplorerapartmentRoutingModule,
+    PageHeadingComponent,
+    SearchDataComponent,
+    PaginationComponent
   ]
 })
 export class ExplorerapartmentModule { }

@@ -3,17 +3,25 @@
 .page_heading{
     @include flex_box(flex,null,center,16px);
     // margin-bottom: 20px;
+         @include responsive('small') {
+            gap: 3px;
+        }
     .section_title{
         color: $main_color;
         font-size: 18px;
         font-weight: 700;
-
+     @include responsive('small') {
+            font-size: 12px;
+        }
     }
 
     .page_title{
         font-size: 16px;
         font-weight: 400;
         color: #619363;
+        @include responsive('small') {
+            font-size: 12px;
+        }
     }
 
 
@@ -24,6 +32,13 @@
 }
 
 
+.showDescription{
+    @include flex_box(flex,null,center,16px);
+         @include responsive('small') {
+            gap: 3px;
+        }
+}
+
     .btns_header{
         a{
         min-width: 182px;
@@ -33,8 +48,13 @@
         text-align: center;
         line-height: 44px;
         font-size: 14px;
-        font-weight: 700px;
+        font-weight: 700;
         color:$white-color;
+
+            @include responsive('small') {
+            font-size: 12px;
+            min-width: 145px;
+        }
         }
         
         

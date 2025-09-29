@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { AddtenantRoutingModule } from './addtenant-routing.module';
 import { AddtenantComponent } from './addtenant.component';
+import { PageHeadingComponent } from '../../../../../shared/ui/page-heading/page-heading.component';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { InputAttachmentsComponent } from '../../../../../shared/ui/input-attachments/input-attachments.component';
 
 
 @NgModule({
@@ -11,7 +14,10 @@ import { AddtenantComponent } from './addtenant.component';
   ],
   imports: [
     CommonModule,
-    AddtenantRoutingModule
+    AddtenantRoutingModule,
+    PageHeadingComponent,
+    NgSelectModule,
+    InputAttachmentsComponent
   ]
 })
 export class AddtenantModule { }
