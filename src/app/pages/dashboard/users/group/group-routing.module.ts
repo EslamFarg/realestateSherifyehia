@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GroupComponent } from './group.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'',component:GroupComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

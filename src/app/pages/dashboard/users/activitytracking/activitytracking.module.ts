@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { ActivitytrackingRoutingModule } from './activitytracking-routing.module';
 import { ActivitytrackingComponent } from './activitytracking.component';
+import { PageHeadingComponent } from '../../../../shared/ui/page-heading/page-heading.component';
+import { SearchinformsComponent } from '../../../../shared/ui/searchinforms/searchinforms.component';
+import { PaginationComponent } from '../../../../shared/ui/pagination/pagination.component';
 
 
 @NgModule({
@@ -11,7 +14,10 @@ import { ActivitytrackingComponent } from './activitytracking.component';
   ],
   imports: [
     CommonModule,
-    ActivitytrackingRoutingModule
+    ActivitytrackingRoutingModule,
+    PageHeadingComponent,
+    SearchinformsComponent,
+    PaginationComponent
   ]
 })
 export class ActivitytrackingModule { }

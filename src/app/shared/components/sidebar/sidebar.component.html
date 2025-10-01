@@ -16,7 +16,7 @@
 
        <div class="accordion_sidebar">
 <div ngbAccordion>
-	<div ngbAccordionItem [collapsed]="false">
+	<div ngbAccordionItem [collapsed]="true">
 		<h2 ngbAccordionHeader>
 			<button ngbAccordionButton>البيانات الرئيسيه</button>
 		</h2>
@@ -31,6 +31,70 @@
                     <a routerLink="apartment" [routerLinkActive]="'active'">الوحده </a>
                     <a routerLink="classification" [routerLinkActive]="'active'">تصنيف الوحده</a>
                     <a routerLink="treereal" [routerLinkActive]="'active'">شجره العقار </a>
+                   
+				</ng-template>
+			</div>
+		</div>
+	</div>
+	<div ngbAccordionItem [collapsed]="true">
+		<h2 ngbAccordionHeader>
+			<button ngbAccordionButton>الصيانه</button>
+		</h2>
+		<div ngbAccordionCollapse>
+			<div ngbAccordionBody>
+				<ng-template>
+                    <a routerLink="maintenance" [routerLinkActive]="'active'">الصيانه</a>
+                    <a routerLink="typemaintenance" [routerLinkActive]="'active'">نوع الصيانه</a>
+                   
+				</ng-template>
+			</div>
+		</div>
+	</div>
+	<div ngbAccordionItem [collapsed]="true">
+		<h2 ngbAccordionHeader>
+			<button ngbAccordionButton>الموظفين</button>
+		</h2>
+		<div ngbAccordionCollapse>
+			<div ngbAccordionBody>
+				<ng-template>
+                    <a routerLink="employees" [routerLinkActive]="'active'">الموظفين</a>
+                    <a routerLink="salarydisbursement" [routerLinkActive]="'active'">صرف الرواتب</a>
+                    <a routerLink="salifis" [routerLinkActive]="'active'">السلفيات</a>
+                   
+                   
+				</ng-template>
+			</div>
+		</div>
+	</div>
+	<div ngbAccordionItem [collapsed]="true">
+		<h2 ngbAccordionHeader>
+			<button ngbAccordionButton>المستخدمين</button>
+		</h2>
+		<div ngbAccordionCollapse>
+			<div ngbAccordionBody>
+				<ng-template>
+                    <a routerLink="newuser" [routerLinkActive]="'active'">مستخدم جديد</a>
+                    <a routerLink="groupusers" [routerLinkActive]="'active'">المجموعه</a>
+                    <a routerLink="activitytracking" [routerLinkActive]="'active'">تتبع النشاط</a>
+
+                   
+                   
+				</ng-template>
+			</div>
+		</div>
+	</div>
+	<div ngbAccordionItem [collapsed]="true">
+		<h2 ngbAccordionHeader>
+			<button ngbAccordionButton>الرسايل</button>
+		</h2>
+		<div ngbAccordionCollapse>
+			<div ngbAccordionBody>
+				<ng-template>
+                    <a routerLink="msgform" [routerLinkActive]="'active'">نموذج الرسايل</a>
+                    <a routerLink="sendmessage" [routerLinkActive]="'active'">ارسال رساله</a>
+        
+
+                   
                    
 				</ng-template>
 			</div>

@@ -41,7 +41,8 @@
 
     .btns_header{
         a{
-        min-width: 182px;
+        min-width: 200px;
+        max-width: 282px;
         background-color: $btn_color;
         height: 44px;
         border-radius: 4px;

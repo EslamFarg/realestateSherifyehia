@@ -14,6 +14,7 @@ export class SearchDataComponent {
   showFilterData=false;
 
   @Input() dataFilter:any
+  @Input() dropDownTitle:any
   selectIndex:any=0
 
   showFilter(){

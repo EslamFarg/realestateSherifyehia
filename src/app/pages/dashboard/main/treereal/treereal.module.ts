@@ -6,6 +6,7 @@ import { TreerealComponent } from './treereal.component';
 import { PagerComponent } from 'ngx-bootstrap/pagination';
 import { PageHeadingComponent } from '../../../../shared/ui/page-heading/page-heading.component';
 import { SearchDataComponent } from "../../../../shared/ui/search-data/search-data.component";
+import { TreePropertyPackageComponent } from '../../../../shared/ui/tree-property-package/tree-property-package.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { SearchDataComponent } from "../../../../shared/ui/search-data/search-da
     CommonModule,
     TreerealRoutingModule,
     PageHeadingComponent,
-    SearchDataComponent
+    SearchDataComponent,
+    TreePropertyPackageComponent
 ]
 })
 export class TreerealModule { }

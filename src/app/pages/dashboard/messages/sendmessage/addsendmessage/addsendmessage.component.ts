@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrl: './addsendmessage.component.scss'
 })
 export class AddsendmessageComponent {
+active = 1;
+
+
+searchdataCheckRealtor:any=[];
+
+showPopupRealtor=false
+
+arrDataCheck(val:any){
+
+  this.searchdataCheckRealtor.push(val);
+
+
+  console.log(this.searchdataCheckRealtor);
+
+}
 
 }

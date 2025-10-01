@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { NewuserRoutingModule } from './newuser-routing.module';
 import { NewuserComponent } from './newuser.component';
+import { PageHeadingComponent } from '../../../../shared/ui/page-heading/page-heading.component';
+import { RefreshSelectComponent } from '../../../../shared/ui/refresh-select/refresh-select.component';
+import { PaginationComponent } from '../../../../shared/ui/pagination/pagination.component';
+
 
 
 @NgModule({
@@ -11,7 +15,10 @@ import { NewuserComponent } from './newuser.component';
   ],
   imports: [
     CommonModule,
-    NewuserRoutingModule
+    NewuserRoutingModule,
+    PageHeadingComponent,
+    RefreshSelectComponent,
+    PaginationComponent
   ]
 })
 export class NewuserModule { }

@@ -9,9 +9,7 @@ import { SalaryDisbursementComponent } from './salary-disbursement.component';
 
 @NgModule({
   declarations: [
-    AddSalaryDisbursementComponent,
-    ExplorerSalaryDisbursementComponent,
-    SalaryDisbursementComponent
+    SalaryDisbursementComponent,
   ],
   imports: [
     CommonModule,

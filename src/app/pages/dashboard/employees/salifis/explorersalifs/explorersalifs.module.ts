@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { ExplorersalifsRoutingModule } from './explorersalifs-routing.module';
 import { ExplorersalifsComponent } from './explorersalifs.component';
+import { PageHeadingComponent } from '../../../../../shared/ui/page-heading/page-heading.component';
+import { SearchDataComponent } from '../../../../../shared/ui/search-data/search-data.component';
+import { PaginationComponent } from '../../../../../shared/ui/pagination/pagination.component';
 
 
 @NgModule({
@@ -11,7 +14,10 @@ import { ExplorersalifsComponent } from './explorersalifs.component';
   ],
   imports: [
     CommonModule,
-    ExplorersalifsRoutingModule
+    ExplorersalifsRoutingModule,
+    PageHeadingComponent,
+    SearchDataComponent,
+    PaginationComponent
   ]
 })
 export class ExplorersalifsModule { }

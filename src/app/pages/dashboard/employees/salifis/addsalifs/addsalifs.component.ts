@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './addsalifs.component.scss'
 })
 export class AddsalifsComponent {
-
+showPopup=false;
 }

@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddsalifsComponent } from './addsalifs.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'',component:AddsalifsComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

@@ -172,6 +172,11 @@ ul{
         font-weight: 400 !important;
         color: $input_color !important;
 
+        &[readonly]{
+            color: $black-color !important;
+
+        }
+
         &.textarea{
             height: 79px !important;
         }
@@ -188,6 +193,7 @@ ul{
 .btn_add_reset{
         // width: 10;
         @include flex_box(flex,flex-end,center,16px);
+        flex-wrap: wrap;
         margin-top: 20px !important;
 
         button{
@@ -259,6 +265,7 @@ table{
 
 position: sticky;
 top: 0;
+z-index: 100;
 
             th{
                 
@@ -346,5 +353,140 @@ ng-select{
         top: 50%;
         transform: translateY(-50%);
 
+    }
+}
+
+.review_searchData{
+    border: 1px solid #BFDBC9;
+    border-radius: 8px;
+    padding: 16px 24px;
+    padding-bottom: 0 !important;
+
+
+    .parent_review{
+        position: relative;
+
+
+        label{
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+
+        input{
+            padding-right: 60px !important;
+        }
+    }
+}
+
+.ng_selectin_table{
+    .ng-select-container{
+        border: 0 !important;
+    }
+}
+
+
+.number_notes{
+    background-color: #F5F5F5 !important;
+}
+
+.checkedBox_shared{
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid $main_color !important;
+    appearance: none;
+    --webkit-appearance: none;
+    position: relative;
+
+    cursor: pointer;
+    &::after{
+        content: "✓";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: $main_color;
+        display: none;
+        font-weight: bold;
+    }
+
+
+    &:checked{
+        &::after{
+            display: block;
+        }
+
+    }
+}
+
+
+// .sendmsg_nav{
+
+    .nav-tabs{
+        border:  0 !important;
+
+       
+        .nav-link{
+            border: none !important;
+            color: #86AC88;
+            font-weight: 700;
+            font-size: 18px;
+            position: relative;
+
+
+            &:hover{
+                color: $main_color !important;
+                border: 0 !important;
+            }
+
+             
+            &.active{
+                color: $main_color !important;
+                border: 0 !important;
+                outline: none;
+             
+                 &::after{
+                content: '';
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+                width: 86px;
+                height: 4px;
+                border-radius: 4px;
+                background-color: $main_color;
+               }
+            }
+
+            
+        }
+    
+
+        .tab-content{
+            margin-top: 50px !important;
+        }
+    }
+    // }
+
+    .choose_data{
+    width: 177px;
+    height: 32px;
+    background-color: #D4AF37;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.send_msg_forms{
+    ng-select{
+
+        .ng-select-container{
+            background-color: #FBFBFB !important;
+        }
     }
 }
