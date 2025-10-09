@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MaindataRoutingModule } from './maindata-routing.module';
 import { MaindataComponent } from './maindata.component';
+import { PageHeadingComponent } from '../../../../shared/ui/page-heading/page-heading.component';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { MaindataComponent } from './maindata.component';
   ],
   imports: [
     CommonModule,
-    MaindataRoutingModule
+    MaindataRoutingModule,
+    PageHeadingComponent
   ]
 })
 export class MaindataModule { }

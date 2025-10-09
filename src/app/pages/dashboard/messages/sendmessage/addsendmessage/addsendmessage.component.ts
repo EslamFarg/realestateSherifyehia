@@ -7,18 +7,30 @@ import { Component } from '@angular/core';
 })
 export class AddsendmessageComponent {
 active = 1;
-
-
+active2=1
+msgDataDescription:any
+showPopup=false;
 searchdataCheckRealtor:any=[];
 
 showPopupRealtor=false
 
 arrDataCheck(val:any){
 
-  this.searchdataCheckRealtor.push(val);
+  this.searchdataCheckRealtor=val;
 
 
   console.log(this.searchdataCheckRealtor);
+
+}
+
+
+deleteTenant(index:any){
+this.searchdataCheckRealtor.splice(index,1)
+}
+
+
+showMsg(val:any){
+  this.msgDataDescription=val;
 
 }
 

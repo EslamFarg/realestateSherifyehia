@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ContractdetailsComponent {
 
+
+  dataFilter=['رقم العقد','اسم المستأجر','رقم الجوال']
+
+
+  typeStatus='منتهي'
+  statusContract=false;
+
+
+
+
 }

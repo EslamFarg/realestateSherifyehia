@@ -1,6 +1,6 @@
 
 <div class="sidebar_component">
-    <app-sidebar [showSidebar]="showAndHideSidebar"></app-sidebar>
+    <app-sidebar [showSidebar]="showAndHideSidebar" (handlehideoverlay)="showAndHideSidebarInDashboard($event)"></app-sidebar>
 </div>
 <div class="content_dashboard">
 <app-header (toggleSidebarForMe)="showAndHideSidebarInDashboard($event)" [fullWidthMode]="showAndHideSidebar"></app-header>

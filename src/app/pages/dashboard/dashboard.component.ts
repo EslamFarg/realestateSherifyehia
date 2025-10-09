@@ -7,7 +7,7 @@
   })
   export class DashboardComponent {
 
-    showAndHideSidebar: any=true;
+    showAndHideSidebar: any=false;
 
 
 
@@ -18,6 +18,24 @@ this.showAndHideSidebar=!this.showAndHideSidebar
       // this.showAndHideSidebar=e
     // if(e==true){this.showAndHideSidebar=false}else{this.showAndHideSidebar=true}
 
+    }
+
+
+    ngOnInit(){
+
+      let lg=window.matchMedia('(min-width:992px)');
+      if(lg.matches){
+        this.showAndHideSidebar=true;
+      }
+
+
+      let md=window.matchMedia('(max-width:992px)');
+
+    md.addEventListener('change',(e:any)=>{
+      if(e.matches){
+        this.showAndHideSidebar=false;
+      }
+    })
     }
 
 

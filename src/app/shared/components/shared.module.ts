@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
-import { AccountsRoutingModule } from "../../pages/accounting/accounts/accounts-routing.module";
+import { RouterModule, RouterOutlet } from '@angular/router';
+// import { AccountsRoutingModule } from "../../pages/accounting/accounts/accounts-routing.module";
 
 
 
@@ -13,7 +14,10 @@ import { AccountsRoutingModule } from "../../pages/accounting/accounts/accounts-
   imports: [
     CommonModule,
     NgbAccordionModule,
-    AccountsRoutingModule
+    // AccountsRoutingModule
+    CommonModule,
+    RouterModule,
+    RouterOutlet
 ],
   exports:[HeaderComponent,SidebarComponent]
 })

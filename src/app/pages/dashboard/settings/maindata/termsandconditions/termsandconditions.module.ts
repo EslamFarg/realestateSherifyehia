@@ -5,7 +5,7 @@ import { TermsandconditionsRoutingModule } from './termsandconditions-routing.mo
 import { TermsandconditionsComponent } from './termsandconditions.component';
 
 
-@NgModule({
+@NgModule({ 
   declarations: [
     TermsandconditionsComponent
   ],

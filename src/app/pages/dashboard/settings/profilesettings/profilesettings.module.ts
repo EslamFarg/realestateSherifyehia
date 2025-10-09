@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ProfilesettingsRoutingModule } from './profilesettings-routing.module';
 import { ProfilesettingsComponent } from './profilesettings.component';
+import { PageHeadingComponent } from '../../../../shared/ui/page-heading/page-heading.component';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ProfilesettingsComponent } from './profilesettings.component';
   ],
   imports: [
     CommonModule,
-    ProfilesettingsRoutingModule
+    ProfilesettingsRoutingModule,
+    PageHeadingComponent
   ]
 })
 export class ProfilesettingsModule { }

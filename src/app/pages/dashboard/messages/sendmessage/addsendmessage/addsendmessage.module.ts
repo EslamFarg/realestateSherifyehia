@@ -6,6 +6,7 @@ import { AddsendmessageComponent } from './addsendmessage.component';
 import { PageHeadingComponent } from '../../../../../shared/ui/page-heading/page-heading.component';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { SearchmsgComponent } from "../../../../../shared/ui/searchmsg/searchmsg.component";
+import { TitleMsgPopupComponent } from "../../../../../shared/ui/title-msg-popup/title-msg-popup.component";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SearchmsgComponent } from "../../../../../shared/ui/searchmsg/searchmsg
     AddsendmessageRoutingModule,
     PageHeadingComponent,
     NgbNavModule,
-    SearchmsgComponent
+    SearchmsgComponent,
+    TitleMsgPopupComponent
 ]
 })
 export class AddsendmessageModule { }

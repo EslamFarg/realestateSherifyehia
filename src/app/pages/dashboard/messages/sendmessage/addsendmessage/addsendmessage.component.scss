@@ -15,13 +15,13 @@
     background-color: #FBFBFB !important;     
     padding:20px 10px;
     margin-bottom: 20px !important;
-    }
+    }   
    
 }
 
 #msgText{
     &.form-control{
-        height: 124px !important;
+        min-height: 124px !important;
 
         padding:20px 10px;
 
@@ -60,6 +60,7 @@
         right: 10px;
         top: 10px;
         @include flex_box(flex,null,center,20px);
+        flex-wrap: wrap;
 
         .box{
             @include flex_box(flex,null,center);
@@ -68,6 +69,10 @@
             padding: 4px 8px;
             background-color: #E0ECE1;
             border-radius: 4px;
+
+            .delete{
+                cursor: pointer;
+            }
         }
         
     }

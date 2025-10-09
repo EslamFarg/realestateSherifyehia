@@ -16,6 +16,7 @@
             top: 50%;
             transform: translateY(-50%);
             @include flex_box(flex,center,center,10px);
+            z-index: 200;
 
 
             .filter_data{

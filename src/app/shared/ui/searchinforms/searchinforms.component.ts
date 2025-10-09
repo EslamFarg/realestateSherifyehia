@@ -11,6 +11,7 @@ import { Component, HostListener, Input } from '@angular/core';
 export class SearchinformsComponent {
 showFilterData=false;
 selectIndex:any=0
+@Input() backgroundForm:any;
 
 @Input() dataFilter:any
 

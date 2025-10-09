@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NewaddcontractComponent } from './newaddcontract.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'',component:NewaddcontractComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

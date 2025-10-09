@@ -23,6 +23,20 @@ const routes: Routes = [
       {path:'activitytracking',loadChildren:()=>import('./users/activitytracking/activitytracking.module').then(m=>m.ActivitytrackingModule)},
       {path:'msgform',loadChildren:()=>import('./messages/messageforms/messageforms.module').then(m=>m.MessageformsModule)},
       {path:'sendmessage',loadChildren:()=>import('./messages/sendmessage/sendmessage.module').then(m=>m.SendmessageModule)},
+      {path:'profilesettings',loadChildren:()=>import('./settings/profilesettings/profilesettings.module').then(m=>m.ProfilesettingsModule)},
+      {path:'maindata',loadChildren:()=>import('./settings/maindata/maindata.module').then(m=>m.MaindataModule)},
+      {path:'addcontract',loadChildren:()=>import('./contracts/addcontract/addcontract.module').then(m=>m.AddcontractModule)},
+      {path:'querycontract',loadChildren:()=>import('./contracts/contractdetails/contractdetails.module').then(m=>m.ContractdetailsModule)},
+      {path:'terminationcontract/:id',loadChildren:()=>import('./contracts/terminationcontract/terminationcontract.module').then(m=>m.TerminationcontractModule)},
+      {path:'paymentvoucher',loadChildren:()=>import('./accounting/paymentvoucher/paymentvoucher.module').then(m=>m.PaymentvoucherModule)},
+      {path:'realtorpaymentvoucher',loadChildren:()=>import('./accounting/realtorpaymentvoucher/realtorpaymentvoucher.module').then(m=>m.RealtorpaymentvoucherModule)},
+      {path:'paymentreceiptvoucher',loadChildren:()=>import('./accounting/paymentreceiptvoucher/paymentreceiptvoucher.module').then(m=>m.PaymentreceiptvoucherModule)},
+      {path:'receiptvoucher',loadChildren:()=>import('./accounting/receiptvoucher/receiptvoucher.module').then(m=>m.ReceiptvoucherModule)},
+      {path:'paymentvouchernormal',loadChildren:()=>import('./accounting/paymentvouchernormal/paymentvouchernormal.module').then(m=>m.PaymentvouchernormalModule)},
+      {path:'accounts',loadChildren:()=>import('./accounting/accounts/accounts.module').then(m=>m.AccountsModule)},
+      {path:'accountstatement',loadChildren:()=>import('./accounting/accountstatement/accountstatement.module').then(m=>m.AccountstatementModule)},
+      {path:'messagesetting',loadChildren:()=>import('./messages/messagesettings/messagesettings.module').then(m=>m.MessagesettingsModule)},
+      {path:'groupmessage',loadChildren:()=>import('./messages/groupmessage/groupmessage.module').then(m=>m.GroupmessageModule)},
     ]
   }
 ];

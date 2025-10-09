@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class ProfilesettingsComponent {
 
+
+  imgFile:any
+
+
+  onFileSelected(e:any){
+    console.log()
+    let file=e.target.files[0];
+    this.imgFile=URL.createObjectURL(file);
+
+
+  }
 }

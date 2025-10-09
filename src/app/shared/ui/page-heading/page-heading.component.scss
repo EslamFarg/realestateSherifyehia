@@ -2,6 +2,7 @@
 @use '../../../../../public/styles/abstracts/mixins' as * ;
 .page_heading{
     @include flex_box(flex,null,center,16px);
+    transition: 0.5s ;
     // margin-bottom: 20px;
          @include responsive('small') {
             gap: 3px;
@@ -19,6 +20,7 @@
         font-size: 16px;
         font-weight: 400;
         color: #619363;
+        transition: 0.5s;
         @include responsive('small') {
             font-size: 12px;
         }
@@ -53,7 +55,7 @@
         color:$white-color;
 
             @include responsive('small') {
-            font-size: 12px;
+            font-size: 10px;
             min-width: 145px;
         }
         }

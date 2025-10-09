@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ProgramsettingsRoutingModule } from './programsettings-routing.module';
 import { ProgramsettingsComponent } from './programsettings.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ProgramsettingsComponent } from './programsettings.component';
   ],
   imports: [
     CommonModule,
-    ProgramsettingsRoutingModule
+    ProgramsettingsRoutingModule,
+    NgSelectModule
   ]
 })
 export class ProgramsettingsModule { }

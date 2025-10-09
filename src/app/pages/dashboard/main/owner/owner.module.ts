@@ -7,11 +7,12 @@ import { PageHeadingComponent } from '../../../../shared/ui/page-heading/page-he
 import { InputAttachmentsComponent } from '../../../../shared/ui/input-attachments/input-attachments.component';
 import { PopupAttachmentsComponent } from '../../../../shared/ui/popup-attachments/popup-attachments.component';
 import { PaginationComponent } from '../../../../shared/ui/pagination/pagination.component';
+import { ScrollAnimationDirective } from '../../../../shared/directives/scroll-animation.directive';
 
 
 @NgModule({
   declarations: [
-    OwnerComponent
+    OwnerComponent,
   ],
   imports: [
     CommonModule,

@@ -1,12 +1,13 @@
 import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { AccountsRoutingModule } from "../../../pages/accounting/accounts/accounts-routing.module";
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-page-heading',
   templateUrl: './page-heading.component.html',
   styleUrl: './page-heading.component.scss',
-  imports: [NgIf, AccountsRoutingModule],
+  imports: [NgIf,RouterModule,RouterOutlet],
   standalone:true,
 })
 export class PageHeadingComponent {

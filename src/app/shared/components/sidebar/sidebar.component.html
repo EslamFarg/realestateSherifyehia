@@ -15,8 +15,8 @@
 
 
        <div class="accordion_sidebar">
-<div ngbAccordion>
-	<div ngbAccordionItem [collapsed]="true">
+<div ngbAccordion [closeOthers]="true">
+	<div ngbAccordionItem [collapsed]="true" >
 		<h2 ngbAccordionHeader>
 			<button ngbAccordionButton>البيانات الرئيسيه</button>
 		</h2>
@@ -24,13 +24,13 @@
 			<div ngbAccordionBody>
 				<ng-template>
 
-                    <a routerLink="owner" [routerLinkActive]="'active'">المالك</a>
-                    <a routerLink="realtor" [routerLinkActive]="'active'">السمسار</a>
-                    <a routerLink="tenant" [routerLinkActive]="'active'">المستأجر</a>
-                    <a routerLink="building" [routerLinkActive]="'active'">العماره</a>
-                    <a routerLink="apartment" [routerLinkActive]="'active'">الوحده </a>
-                    <a routerLink="classification" [routerLinkActive]="'active'">تصنيف الوحده</a>
-                    <a routerLink="treereal" [routerLinkActive]="'active'">شجره العقار </a>
+                    <a routerLink="owner" [routerLinkActive]="'active'" (click)="handleClick()">المالك</a>
+                    <a routerLink="realtor" [routerLinkActive]="'active'" (click)="handleClick()">السمسار</a>
+                    <a routerLink="tenant" [routerLinkActive]="'active'" (click)="handleClick()">المستأجر</a>
+                    <a routerLink="building" [routerLinkActive]="'active'" (click)="handleClick()">العماره</a>
+                    <a routerLink="apartment" [routerLinkActive]="'active'" (click)="handleClick()">الوحده </a>
+                    <a routerLink="classification" [routerLinkActive]="'active'" (click)="handleClick()">تصنيف الوحده</a>
+                    <a routerLink="treereal" [routerLinkActive]="'active'" (click)="handleClick()">شجره العقار </a>
                    
 				</ng-template>
 			</div>
@@ -43,8 +43,8 @@
 		<div ngbAccordionCollapse>
 			<div ngbAccordionBody>
 				<ng-template>
-                    <a routerLink="maintenance" [routerLinkActive]="'active'">الصيانه</a>
-                    <a routerLink="typemaintenance" [routerLinkActive]="'active'">نوع الصيانه</a>
+                    <a routerLink="maintenance" [routerLinkActive]="'active'" (click)="handleClick()">الصيانه</a>
+                    <a routerLink="typemaintenance" [routerLinkActive]="'active'" (click)="handleClick()">نوع الصيانه</a>
                    
 				</ng-template>
 			</div>
@@ -57,9 +57,9 @@
 		<div ngbAccordionCollapse>
 			<div ngbAccordionBody>
 				<ng-template>
-                    <a routerLink="employees" [routerLinkActive]="'active'">الموظفين</a>
-                    <a routerLink="salarydisbursement" [routerLinkActive]="'active'">صرف الرواتب</a>
-                    <a routerLink="salifis" [routerLinkActive]="'active'">السلفيات</a>
+                    <a routerLink="employees" [routerLinkActive]="'active'" (click)="handleClick()">الموظفين</a>
+                    <a routerLink="salarydisbursement" [routerLinkActive]="'active'" (click)="handleClick()">صرف الرواتب</a>
+                    <a routerLink="salifis" [routerLinkActive]="'active'" (click)="handleClick()">السلفيات</a>
                    
                    
 				</ng-template>
@@ -73,9 +73,9 @@
 		<div ngbAccordionCollapse>
 			<div ngbAccordionBody>
 				<ng-template>
-                    <a routerLink="newuser" [routerLinkActive]="'active'">مستخدم جديد</a>
-                    <a routerLink="groupusers" [routerLinkActive]="'active'">المجموعه</a>
-                    <a routerLink="activitytracking" [routerLinkActive]="'active'">تتبع النشاط</a>
+                    <a routerLink="newuser" [routerLinkActive]="'active'" (click)="handleClick()">مستخدم جديد</a>
+                    <a routerLink="groupusers" [routerLinkActive]="'active'" (click)="handleClick()">المجموعه</a>
+                    <a routerLink="activitytracking" [routerLinkActive]="'active'" (click)="handleClick()">تتبع النشاط</a>
 
                    
                    
@@ -90,12 +90,60 @@
 		<div ngbAccordionCollapse>
 			<div ngbAccordionBody>
 				<ng-template>
-                    <a routerLink="msgform" [routerLinkActive]="'active'">نموذج الرسايل</a>
-                    <a routerLink="sendmessage" [routerLinkActive]="'active'">ارسال رساله</a>
+                    <a routerLink="msgform" [routerLinkActive]="'active'" (click)="handleClick()">نموذج الرسايل</a>
+                    <a routerLink="sendmessage" [routerLinkActive]="'active'" (click)="handleClick()">ارسال رساله</a>
+                    <a routerLink="messagesetting" [routerLinkActive]="'active'" (click)="handleClick()">اعداد الرسايل</a>
+                    <a routerLink="groupmessage" [routerLinkActive]="'active'" (click)="handleClick()">مجمع الرسايل</a>
         
 
                    
                    
+				</ng-template>
+			</div>
+		</div>
+	</div>
+	<div ngbAccordionItem [collapsed]="true">
+		<h2 ngbAccordionHeader>
+			<button ngbAccordionButton>الاعدادت</button>
+		</h2>
+		<div ngbAccordionCollapse>
+			<div ngbAccordionBody>
+				<ng-template>
+                    <a routerLink="profilesettings" [routerLinkActive]="'active'" (click)="handleClick()">الملف الشخصي</a>
+                    <a routerLink="maindata" [routerLinkActive]="'active'" (click)="handleClick()">البيانات الرئيسيه</a>                   
+				</ng-template>
+			</div>
+		</div>
+	</div>
+	<div ngbAccordionItem [collapsed]="true">
+		<h2 ngbAccordionHeader>
+			<button ngbAccordionButton>العقود</button>
+		</h2>
+		<div ngbAccordionCollapse>
+			<div ngbAccordionBody>
+				<ng-template>
+                    <a routerLink="addcontract" [routerLinkActive]="'active'" (click)="handleClick()">اضافه عقد</a>
+                    <a routerLink="querycontract" [routerLinkActive]="'active'" (click)="handleClick()">استعلام عن عقد</a>
+                    <!-- <a routerLink="maindata" [routerLinkActive]="'active'">البيانات الرئيسيه</a>                    -->
+				</ng-template>
+			</div>
+		</div>
+	</div>
+	<div ngbAccordionItem [collapsed]="true">
+		<h2 ngbAccordionHeader>
+			<button ngbAccordionButton>المحاسبه</button>
+		</h2>
+		<div ngbAccordionCollapse>
+			<div ngbAccordionBody>
+				<ng-template>
+                    <a routerLink="paymentvoucher" [routerLinkActive]="'active'" (click)="handleClick()">  سند الصرف خاص بالمالك والشركه</a>
+                    <a routerLink="realtorpaymentvoucher" [routerLinkActive]="'active'" (click)="handleClick()">سند الصرف خاص بالسمسار</a>
+                    <a routerLink="paymentreceiptvoucher" [routerLinkActive]="'active'" (click)="handleClick()">استلام الدفعات</a>
+                    <a routerLink="receiptvoucher" [routerLinkActive]="'active'"  (click)="handleClick()">سند القبض</a>
+                    <a routerLink="paymentvouchernormal" [routerLinkActive]="'active'" (click)="handleClick()">سند الصرف</a>
+                    <a routerLink="accounts" [routerLinkActive]="'active'" (click)="handleClick()">الحسابات</a>
+                    <a routerLink="accountstatement" [routerLinkActive]="'active'" (click)="handleClick()">كشف الحساب</a>
+                  
 				</ng-template>
 			</div>
 		</div>
